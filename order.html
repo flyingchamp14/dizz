@@ -726,7 +726,28 @@ body {
 
 <body>
 
-
+<label>Quantity</label>
+<input id="quantity" type="number"></input
+<label>Frame color</label>
+<select id="frame_color">
+  <option value="Black">Black</option>
+  <option value="Brown">Brown</option>
+  <option value="Gold">Gold</option>
+</select>
+<button
+  id="dizz-tablet"
+  class="snipcart-add-item"
+  data-item-id="dizz-lemon-tablet"
+  data-item-price="79.99"
+  data-item-url="dizz-lemon-tablet.html"
+  data-item-description="High-quality lemonade by the Dutch post-impressionist painter Vincent van Gogh."
+  data-item-image="/assets/images/starry-night.jpg"
+  data-item-name="The DIZZ Lemonade Tablet"
+  data-item-custom1-name="Frame color"
+  data-item-custom1-options="Black|Brown|Gold"
+  data-item-custom2-name="Gift note">
+  Add to cart
+</button>
 
 <div class="container">
 			<div class="scene">
@@ -761,7 +782,17 @@ body {
 
 <script>
 
-
+const button = document.querySelector('#dizz-lemon-tablet')
+const quantity = document.querySelector('#quantity')
+quantity.addEventListener('change', () => {
+  // Sets the default quantity when adding the item
+  button.setAttribute('data-item-quantity', quantity.value)
+})
+const select = document.querySelector('#frame_color')
+select.addEventListener('change', () => {
+  // Sets the default frame color when adding the item
+  button.setAttribute("data-item-custom1-value", select.value)
+})
 
 </script>
 
