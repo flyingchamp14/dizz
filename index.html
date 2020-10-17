@@ -85,10 +85,10 @@ body { text-align:center;
   <a href="https://ibhavyathakur.wixsite.com/mysite-1">Comunity</a>
 </div>
 
-<h1 id="firstline"> Welcome to
+<h1 id="firstline"> <span onclick = "doorMB()">Welcome</span> to
   <br> Dizz
   <h1/>
-  <p id="subtext1"><b> Lemonade Drink Tablets </b><p/> 
+  <p id="subtext1"><b> Lemonade <span onclick = "plus">Drink</span> Tablets </b><p/> 
 
 <!-- hitwebcounter Code START -->
 <a href="index.html">
@@ -108,6 +108,7 @@ body { text-align:center;
    
 
 <script>
+ var x = 0
   var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -159,22 +160,17 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+ function plus(){
+  x=1
+ }
+ function doorMB(){
+  if (x==1){
+  window.location.replace("poetific.com")
+  
+  }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ }
   
 </script>
 </body>
