@@ -105,9 +105,17 @@ body { text-align:center;
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 
-   
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180643533-1"></script>  
 
 <script>
+ 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180643533-1'); 
+ 
  var x = 0
   var slideIndex = 1;
 showDivs(slideIndex);
