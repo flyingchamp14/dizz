@@ -86,11 +86,6 @@ body {
 <div id="PINcode"></div>
 
 <script>
-if (!isset($_SERVER['HTTP_REFERER'])){
-
-   echo "uh?"; }
-
-else {
 $(function() {
 	$( "#PINform" ).draggable();
 });
@@ -150,7 +145,6 @@ function submitForm(e) {
 		$( "#PINbox" ).val( "" );
 	};
 };
-}
 
 </script>
 </body>
