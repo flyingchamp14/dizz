@@ -2,6 +2,12 @@
 <html>
 
 <head>
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "myStyle.css" />
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+   <script type="thttps://s3-us-west-2.amazonaws.com/s.cdpn.io/183786/waves.js"></script>
 <style>
 body {
 	background: Darkgray;
