@@ -3,115 +3,197 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
-	
-https://codepen.io/pen/?template=oNLyRON
 
-	
-<style>
+<style>	
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-//Common
-header, section, footer {
-  height: 100vh;
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-//Header
-header {
-  height: 80vh;
-  .headings {
-    text-align: center;
-    h1 {
-      font-size: 50px;
-      font-weight: 500;
-      margin-top: 0;
-    }
-  }
+header h1 {
+  font-weight: 700;
+  margin: 0;
 }
 
-//Sections
-section {
-  &.surfin {
-    background: #F4F4F4 url(https://mail.google.com/mail/u/0?ui=2&ik=6f419d8e1a&attid=0.1&permmsgid=msg-f:1682435353858641133&th=1759360a584d8ced&view=fimg&disp=thd&attbid=ANGjdJ-cqVo6JzMGHhKZPDJLu--DNn9Kl4qy8U1mPjNFAwcR48ahMSWwwN3ARThiV5BrepWacsMFSFQlUZogVaQZMwJlCoT4rz6s3NPDc8m_pAYiTyy3Rxtv1E6k_IQ&ats=2524608000000&sz=w1302-h665) no-repeat center center;
-    background-size: cover;
-    @media (min-width: 1200px) {
-      background-image: none;
-    }
-  }
+header nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.parallax {
-   position: relative;
-   overflow: hidden;
-  .parallaxLayer {
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
-  .layer-bg {
-	  background-image: url('https://images.unsplash.com/photo-1604315168508-992dc328207d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80');
-  }
-  .layer-1 {
-	  background-image: url('');
-  }
-  .layer-2 {
-	  background-image: url('');
-  }
-  .layer-3 {
-	  background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=6f419d8e1a&attid=0.1&permmsgid=msg-f:1682435353858641133&th=1759360a584d8ced&view=fimg&disp=thd&attbid=ANGjdJ-cqVo6JzMGHhKZPDJLu--DNn9Kl4qy8U1mPjNFAwcR48ahMSWwwN3ARThiV5BrepWacsMFSFQlUZogVaQZMwJlCoT4rz6s3NPDc8m_pAYiTyy3Rxtv1E6k_IQ&ats=2524608000000&sz=w1302-h665');
-  }
+header p {
+  padding: 0 20px;
+  margin: 0;
+  font-weight:bold;
 }
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1529209061666-6ca917f6f5e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=842&q=80');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 10px 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+    border-radius: 2px;
+    border: 0px;
+    font-size: 18px;
+    color: #000000;
+    text-shadow: none;
+    background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #0081ff;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(0, 130, 255, 0.5);
+  margin: 0 0 30px;
+}
+.btn.btn-secondary:hover {
+    color: #ffffff;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.6);
+    background: #000;
+}
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+  background: #dddddd;
+  margin-top: 10px;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+ background-color: #000000;
+}	
 </style>
 
 </head>
 
 <body>
-<header>
-  <div class="headings">
-    <h1>DIZZ Lemonade</h1>
-    <p>Drop & Fizz<p>  
-  </div> 
-</header>
-<section class="surfin parallax">
-    <div class="parallaxLayer layer-bg" data-depth="0.1"></div>
-    <div class="parallaxLayer layer-1" data-depth="0.2"></div>
-  <div class="parallaxLayer layer-2" data-depth="0.3"></div>
-  <div class="parallaxLayer layer-3" data-depth="0.8"></div>
-</section>
-<footer class=""></footer>
+<head>
+  <title>DIZZ Lemonade</title>
+  <meta charset="utf-8" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-8">DIZZ Lemonade</h1>
+      </nav>
+    </div>
+  </header>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>DIZZ Lemonade</h2>
+        <h3>A Truly Revolutionary Product </h3>
+        <a class="btn btn-primary" href="about.html">See more</a>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        
+      </div>
+      <div class="col-sm-6">
+        
+      </div>
+    </div>
+    <div class="row text-center">
+      <a class="btn btn-secondary" href="https://dizz-netlify-app.webnode.com">Order the Product</a>
+    </div>
+  </section>
+  <footer class="container">
+    <div class="row">
+        </p>
+      <ul class="col-sm-8">
+        
+          <img 
+        </li>
+        
+          <img 
+        </li>
+        
+          
+        </li>
+        
+          <img 
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>	
+	
 <script>
 
-$(function() {
-  
-    var $parallaxContainer = $('.parallax'),
-        $parallaxLayers = $('.parallaxLayer');
-  
-    $(window).scroll(function() { 
-      
-      var scrollTop = $(window).scrollTop(),
-          containerOffset = $parallaxContainer.offset().top,
-          offset = (containerOffset - scrollTop);
-      
-       $parallaxLayers.each(function() {
-         var depth = $(this).attr('data-depth'),
-             move = -(offset * depth);
-         
-         $(this).css('transform','translate3d(0,' + move + 'px, 0)');
-         
-       });
-    });
-});
 </script>
 
 </body>
